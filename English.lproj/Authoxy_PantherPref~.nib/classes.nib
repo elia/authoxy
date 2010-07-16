@@ -1,0 +1,65 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {setAutoManualConfig = id; startStop = id; }; 
+            CLASS = AuthoxyPref; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bStartStop = NSButton; 
+                cLogging = NSButton; 
+                fAddress = NSTextField; 
+                fLocalPort = NSTextField; 
+                fPACAddress = NSTextField; 
+                fPassword = NSTextField; 
+                fRemotePort = NSTextField; 
+                fStatus = NSTextField; 
+                fUsername = NSTextField; 
+                mAutoManualConfig = NSMatrix; 
+                rAutoConfig = NSButtonCell; 
+                rNoAutoConfig = NSButtonCell; 
+                tMessages = NSTextView; 
+                tTabs = NSTabView; 
+            }; 
+            SUPERCLASS = NSPreferencePane; 
+        }, 
+        {
+            ACTIONS = {setAutoManualConfig = id; setNTLMConfig = id; startStop = id; }; 
+            CLASS = "Authoxy_PantherPref"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bStartStop = NSButton; 
+                cLogging = NSButton; 
+                cNTLMEnabled = NSButton; 
+                cPromptForCredentials = NSButton; 
+                fAddress = NSTextField; 
+                fLocalPort = NSTextField; 
+                fNTLMDomain = NSTextField; 
+                fNTLMHost = NSTextField; 
+                fPACAddress = NSTextField; 
+                fPassword = NSTextField; 
+                fRemotePort = NSTextField; 
+                fStatus = NSTextField; 
+                fUsername = NSTextField; 
+                mAutoManualConfig = NSMatrix; 
+                rAutoConfig = NSButtonCell; 
+                rNoAutoConfig = NSButtonCell; 
+                tMessages = NSTextView; 
+                tTabs = NSTabView; 
+            }; 
+            SUPERCLASS = NSPreferencePane; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = NSPreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_firstKeyView" = id; 
+                "_initialKeyView" = id; 
+                "_lastKeyView" = id; 
+                "_window" = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

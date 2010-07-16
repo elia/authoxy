@@ -1,0 +1,30 @@
+/.DS_Store/1.4/Wed Mar  5 12:47:10 2008//
+/.cvsignore/1.1/Thu Jun 21 15:28:01 2007//
+/Authoxy-Panther_Prefix.pch/1.1.1.1/Sun Apr 18 09:06:49 2004//
+/AuthoxyDaemon.c/1.4/Wed Mar  5 12:47:10 2008//
+/AuthoxyDaemon.h/1.5/Wed Mar  5 12:47:10 2008//
+/Authoxy_PantherPref.h/1.4/Wed Mar  5 12:47:10 2008//
+/Authoxy_PantherPref.icns/1.1.1.1/Sun Apr 18 09:06:49 2004//
+/Authoxy_PantherPref.m/1.6/Wed Mar  5 12:52:39 2008//
+/COPYING/1.1.1.1/Sun Apr 18 09:06:49 2004//
+/Info.plist/1.6/Wed Mar  5 12:47:11 2008//
+/NTLM copy.c/1.1.1.1/Sun Apr 18 09:06:50 2004//
+/NTLM.c/1.4/Wed Mar  5 12:47:11 2008//
+/base64.c/1.2/Wed Mar  5 12:47:11 2008//
+/base64.h/1.1.1.1/Sun Apr 18 09:06:49 2004//
+/connections.c/1.3/Wed Mar  5 12:47:11 2008//
+/defaults.h/1.3/Wed Mar  5 12:47:12 2008//
+/global.h/1.1.1.1/Sun Apr 18 09:06:49 2004//
+/jsInterface.c/1.2/Sat Apr 15 11:14:16 2006//
+/jsapi.h/1.1.1.1/Sun Apr 18 09:06:49 2004//
+/jsautocfg.h/1.1.1.1/Sun Apr 18 09:06:49 2004//
+/jscompat.h/1.1.1.1/Sun Apr 18 09:06:49 2004//
+/jslong.h/1.1.1.1/Sun Apr 18 09:06:50 2004//
+/jsosdep.h/1.1.1.1/Sun Apr 18 09:06:50 2004//
+/jsotypes.h/1.1.1.1/Sun Apr 18 09:06:50 2004//
+/jspubtd.h/1.1.1.1/Sun Apr 18 09:06:50 2004//
+/jstypes.h/1.1.1.1/Sun Apr 18 09:06:50 2004//
+/md4.h/1.1.1.1/Sun Apr 18 09:06:50 2004//
+/md4c.c/1.1.1.1/Sun Apr 18 09:06:50 2004//
+/version.plist/1.1.1.1/Sun Apr 18 09:06:50 2004//
+D

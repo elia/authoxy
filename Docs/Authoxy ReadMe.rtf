@@ -1,0 +1,244 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf440
+{\fonttbl\f0\fswiss\fcharset77 Helvetica;\f1\fswiss\fcharset77 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+\vieww14540\viewh13180\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f0\fs48 \cf0 Authoxy
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f1\b \cf0 By Heath Raftery
+\f0\b0 \
+\
+A lightweight proxy server providing seamless, system wide authentication to your regular HTTP and HTTPS proxy.\
+\
+
+\f1\b \ul Quick Setup:
+\f0\b0 \ulnone \
+In case you hate ReadMe's, here's the gist (you may want to make a note of these instructions):\
+\
+After install, you have 3 things to do:\
+1. Go to System Preferences, where an extra icon should appear. Set up and start Authoxy by clicking this new icon.\
+2. Go to Network->Proxies in System Preferences and add the following information to Web Proxy (HTTP) and if you desire, Secure Web Proxy as well:\
+Proxy:	127.0.0.1\
+Port:	8080 (or if you chose a different local port in Authoxy's settings, use that)\
+You can even define a new location for these settings, which will make disabling Authoxy as easy as switching locations.\
+3. If you want Authoxy to start when you restart your computer, install the optional startAuthoxy application (which is installed by default) and add it to your Login Items in System Preferences. You will also need startAuthoxy if you choose to use the Location X plug-in, lxAuthoxy.\
+\
+
+\f1\b \ul Description:
+\f0\b0 \ulnone \
+If your connection to the Internet requires authenticating to a HTTP proxy, such as used in many universities and companies, you may well have discovered that many Mac OS X applications which require an Internet connection will simply fail. Some prominent examples are Software Update, MacHelp, parts of Quicktime, parts of iTunes (CDDB, Net Radio), and Sherlock. Authoxy may be the solution to never having to worry about authenticating with the proxy again.\
+\
+
+\f1\b \ul Important - NTLM users:
+\f0\b0 \ulnone \
+The NTLM authentication scheme is not published publicly anywhere, so all the work in Authoxy's NTLM support is based on reverse-engineering of the protocol undertaken by various communities. For that reason, support may be sketchy, and will break if Microsoft changes the scheme. Please take these things into consideration:\
+\
+1. If you can't get it working, turning on the logging option and test the connection in the Message tab. Use what appears in the messages tab and the /tmp/authoxy.test file in any bug reports.\
+2. If things are working for you, turn the logging option off and restart the daemon. Unnecessarily logging will quickly fill your logs, slowing down Authoxy a great deal.\
+5. The NTLM scheme is huge, complicated and not officially documented! Every single option has not been implemented, and there's no way to test every possible configuration. Support only improves with your logs for failed attempts.\
+6. Please use the Discuss mailing list to discuss connection issues.\
+\
+
+\f1\b \ul Detailed instructions:
+\f0\b0 \ulnone \
+Authoxy requires that you set your proxy in System Preferences to the local machine, so that Authoxy can intercept proxy requests, and attach the authorization string before forwarding the requests on to the real proxy. To make this change, go to System Preferences->Network->Proxy, and fill in the HTTP Proxy Address field like so:\
+\
+Web Proxy (HTTP): 127.0.0.1	Port: 8080\
+Secure Web Proxy: 127.0.0.1	Port: 8080   <-- only set this one if your proxy supports HTTPS!\
+\
+If you already use port 8080 on your machine for something else (for example, you run your own proxy), you can choose a different port for Authoxy. In that case, change the Port setting in the Network preferences pane to your own selection (something between 8000 and 8999 is standard).\
+\
+Next, drop the Authoxy.prefPane into your PreferencePanes folder. Create this folder if it doesn't exist (it must be spelt exactly as seen in this ReadMe), in one of the following locations:\
+\
+For the use of all users of your computer, if you are an Administrator:	/Library/PreferencePanes\
+For your use only, or if you are not an Administrator:				/Users/yourusername/Library/PreferencePanes\
+If you want Authoxy available to those on your network:			/Network/Library/PreferencePanes\
+If you are Apple									/System/Library\
+\
+where yourusername is your login name. Next time you open System Preferences, you should have an extra item called Authoxy, in the 'Other' section. Click on the icon to set it up. Simply fill in the text boxes with details about your proxy (consult your system administrator or a nearby geek if you are not sure) and click the "Start Authoxy" button.\
+\
+If all is well, in a second or two the text on the right side of the pane will change to show that one daemon is running. At this stage, fire up a web browser, and browse to a web site to test Authoxy. If all is well, your website will appear as normal, except you will never be asked for your proxy username and password again!\
+\
+You can keep an eye on the status text in the preference pane, which should change to show how many daemons are currently running. When Authoxy is idle, just one daemon should be running, but when loading complex web pages, there can be quite a few running at once.\
+\
+
+\f1\b \ul What if it doesn't work?
+\f0\b0 \ulnone \
+Bummer. Authoxy has improved a great deal, but testing for the unlimited configurations in the real world is impossible. That's why any feedback you can provide is provided.\
+\
+First check the messages tab in Authoxy's preference pane. Authoxy occasionally writes error messages there. Also check the support page at <http://www.hrsoftworks.net/support.html>. That page gets updated with problems which surface after Authoxy is released.\
+\
+Authoxy does not work for all authentication schemes. In fact, it only supports the 'Basic:' (very common in Squid proxies and others)  and the NTLM method (common in Microsoft proxies). If your proxy requires Digest or Kerberos authentication, write to me and request it. \
+\
+*NEW* in version 3.4 is the ability to "test" the connection. Switch to the Messages tab and click the Test Connection button to produce a detailed log of the network traffic.\
+\
+
+\f1\b \ul Legal Crap:
+\f0\b0 \ulnone \
+I wrote Authoxy, which I reckon entitles me to copyright. You are free to pass it on to whomever you like, as long as this ReadMe goes with it. I hereby disclaim any blame for breaking anything, you use this software at your own risk. I think it is very safe.\
+\
+
+\f1\b \ul Pricing / Licensing
+\f0\b0 \ulnone \
+Authoxy takes some time to support. Sadly, I can no longer afford the time for free. I will not cripple Authoxy, and you are welcome to trial it for free, but if you find it useful, or want support from me, I would appreciate some compensation. My pricing scheme follows (all prices in US dollars, despite me not living in that country, since it seems to suit the majority of users):\
+\
+Student or education user:	$US5\
+Private User:			$US10\
+Site License:			$US120\
+\
+I accept cheques in the mail for an amount roughly equivalent to the prices above in your currency (check the HRSoftWorks web site for the address), or payments through PayPal (which calculates the exchange rate for you). Feel free to organize something else with me personally if you see fit. To pay through PayPal follow one of the links below depending on your payment category:\
+\
+Student / academic:		https://www.paypal.com/xclick/business=hraftery%40myrealbox.com&item_name=Authoxy&item_number=1.0.0&amount=5.00&no_note=1&tax=0&currency_code=USD\
+Private: 			https://www.paypal.com/xclick/business=hraftery%40myrealbox.com&item_name=Authoxy&item_number=1.0.0&amount=10.00&no_note=1&tax=0&currency_code=USD\
+Site:				https://www.paypal.com/xclick/business=hraftery%40myrealbox.com&item_name=Authoxy&item_number=1.0.0&amount=120.00&no_note=1&tax=0&currency_code=USD\
+\
+
+\f1\b \ul Contact:
+\f0\b0 \ulnone \
+Please consider using the HRSoftWorks-Discuss mailing list for any correspondence. Regrettably, I can no longer find the time to reply to every email individually, and using the list would cut down my workload considerably, which means more development for Authoxy! You can subscribe to the lists at <http://www.hrsoftworks.net>.\
+\
+Heath Raftery\
+heath@hrsoftworks.net\
+HRSoftWorks\
+<http://www.hrsoftworks.net>\
+\
+
+\f1\b \ul Change log:
+\f0\b0 \ulnone \
+\
+V3.4\
+* Updated for Leopard.\
+** Fixed problem with the preferences not being saved.\
+** Rewrote the routines dealing with Intel and PPC endianess.\
+* Updated to SpiderMonkey 1.7.0 static library.\
+* Updated to libcurl 7.17.1 static library.\
+* Updated to the OpenSSL 0.9.7 DES and MD4 routines.\
+* Fixed a potential bug in base64 password encoding.\
+* Improved some memory copying routines.\
+* Major: added the ability to "test" the connection, logging detailed network traffic to file.\
+* Improved consistency and detail in the reporting of many of the exceptional situations.\
+\
+V3.3\
+* Fixed some niggling issues with the move to Universal Binary\
+* Improved the error reporting when old versions of Authoxy are installed.\
+* Slight cosmetic improvements.\
+* Brought startAuthoxy up to version parity.\
+* Fixed file permissions and error handling issues with pid and port temp files.\
+\
+V3.2.5\
+* Improved use of external libraries, improving platform support and connection behaviour.\
+* Added the ability to allow connections to Authoxy from other computers. Off by default for security reasons.\
+* Changed the logging level from Informational to Notice, to avoid automatic pruning by syslog.\
+\
+V3.2\
+* Updated to latest library versions.\
+* Authoxy and the associated daemon are now Universal Binaries! That means they'll run on the new Intel Macs as well as the old PPC based Macs.\
+\
+V3.1.2\
+* startAuthoxy's method of determining the PID of the new Authoxy daemon has been updated to reflect the new behaviour where the daemon reports the PID via a tmp file.\
+* Added a textual hint about the fact that changes will not take effect until the daemon is started and stopped.\
+* Implemented a check which avoids parsing the system log if it is so large that parsing could cause problems.\
+* The Authoxy interface now notices when it has probably lost touch with the daemon, and if so, attempts to kill it with a killall call. If this is successful, a new one can be started and the connection restored.\
+* In the NTLM authentication process, we no longer wait for the server to close the connection after step two. Instead the traffic is monitored and the connection closure initiated from the client end. This has helped in some situations were the server has failed to close the connection.\
+* While the NTLM changes were being made, a couple of small performance increases were implemented in the connection handling routines.\
+* Increased the internal connection buffer size from 1024 bytes to 2048 bytes. Now a full Ethernet packet (typically 1514 bytes) can fit in the buffer, and another 1k really isn't a big memory hit.\
+\
+V3.1.1\
+* Restored support for CONNECT requests so secure and HTTPS sites work again. Only the CONNECT header allows the Request-URI to be just the "authority".\
+* Added Target Info parsing and logging to NTLM.\
+* Compiled lxAuthoxy on Panther in XCode, bringing it into line with the rest of the code.\
+* Fixed typo in Installer.\
+\
+V3.1\
+* NTLM: non-persistant connection clients like Safari, Software Update, etc., are now supported. The connection is quietly held open for the authentication process, and then the Connection: close status restored for the original request.\
+* Added accurate reporting of Authoxy's local port. Should no longer get "port unknown" unless it really is unknown.\
+* PAC support now uses server fallback if the script requests it.\
+* Direct PAC connections to specific ports are now respected.\
+* Added option to prompt for proxy credentials when startAuthoxy is run. That way, new username and password values can be entered at login.\
+\
+V3.0\
+* Major: Added NTLM authentication.\
+* Fixed a bug which would cause authentication to fail on large POST's.\
+* Changed the way the Preference Pane keeps track of the daemon. Now waits for the daemon to report its new PID.\
+* Changing the wording on the logging option to more accurately reflect what it does.\
+* Fixed a bug in the decoding of username and password. Those settings should stick now.\
+\
+V2.3\
+* Re-assembled Authoxy into a new Xcode project.\
+* Built using the 10.2.7 SDK, finally supporting Jaguar again!\
+\
+V2.2.5\
+* Change package install script to a preflight script to guarantee execution.\
+* Updated startAuthoxy to new development environment.\
+* Fixed a rare memory usage bug in executing PAC scripts.\
+* Reverted to libcrypto.0.9 (instead of 0.9.7) to support older installations.\
+\
+V2.2\
+* Improved PAC script parsing. Scripts with multiple functions should now compile.\
+* Reverted to libssl.0.9 (instead of 0.9.7) to support older installations.\
+\
+V2.1\
+* Compiled on Panther, using XCode, with GCC 3.3\
+* Fixed a bug which would occasionally cause the preference pane to forget the username and password\
+\
+V2.0\
+* Added support for Mac OS X 10.3, Panther.\
+* Added a messages tab which parses the system log for entries from the Authoxy daemon.\
+* Major: Added support for proxy automatic configuration files. Authoxy could even be used solely as a global PAC file handler.\
+* Fixed several smallish connection handling issues for uncommon events.\
+* Redesigned the icon!\
+* Merged startAuthoxy and the prefPane into an install package. It seems lots of people still wont read ReadMe's!\
+\
+V1.2\
+* The second big rewrite of the connection handling algorithm. Authoxy has become much more transparent, polite and smooth. All changes for this version stem as a result of this rewrite.\
+* While HTTPS connections may have worked in the past, mostly through luck, secure/HTTPS/SSL connections are now officially supported!\
+* Authoxy now officially supports these HTTP/1.1 methods: GET POST CONNECT OPTIONS HEAD PUT DELETE TRACE\
+* Keep-Alive and persistent connections supported - just be wary of IE opening far too many connections without closing old ones.\
+\
+V1.1.2\
+* Improved error messages printed to the syslog by the daemon. The last errno is now reported.\
+* Began using compressed disk images for release instead of stuffing a 5MB image.\
+\
+V1.1.1\
+* Increased the size of the internal listen buffer. Seems to make a few things happier. Specifically, IE seems to drop connections if it can't get all the data through in one go. Seems like sketchy behaviour to me.\
+* Added the version number to the Preference Pane GUI.\
+\
+V1.1.0\
+* Fixed support for OS X 10.1.x users.\
+* Fixed the preference pane icon\
+\
+V1.0.5\
+* A number of silly spelling and grammar errors were fixed. That will be the last time a version of Authoxy is released at 4am.\
+* Wording corrected to reflect the fact that you can no longer start the Authoxy daemon at boot, but at log in instead.\
+* Fixed the disk image. I believe people weren't able to see the background picture in previous versions.\
+* Fixed the hierarchy of the .prefPane. The icons and so forth should be in their right place.\
+* Tracked down a long standing bug where the daemon would crash when visiting certain sites, if logging was turned on.\
+\
+V1.0.0\
+* Fixed tab order and positioning of elements in Preference Pane\
+* A "Location X" <http://homepage.mac.com/locationmanager> plug-in was written to work with Authoxy to allow the simple switching between configuration sets.\
+* Rewrote method for starting Authoxy at system boot. A separate app (for adding to login items) called startAuthoxy performs non-interactive restart of the daemon\
+* Translated preferences saving/restoring code to use CFPreferences instead of NSUserDefaults\
+* - Preferences now stored in com.hrsoftworks.AuthoxyPref.plist instead of com.apple.systempreferences.plist\
+* - Allows more straight-forward development of a plug-in for Location X <http://homepage.mac.com/locationmanager/>\
+* Major: rewrote most of the connection handling code to incorporate some very desirable changes:\
+* - Understands and obeys the Content-Length header, as used in the (now) very common POST method\
+* - Incorporates much more of the HTTP standard (RFC 2616) with foundations for more support if needed\
+* - Much friendly (more standard) handling of connection lifetimes, understanding header lengths etc.\
+* Improved handling of the "Start Authoxy on System Startup" option\
+* Improved general memory management in the preference pane\
+* Fixed the "port already in use" error which would not allow the daemon to start\
+\
+V1.0.0rc\
+* Removed the restriction to ~/Library/PreferencePanes. Any Library folder the system recognizes will do now.\
+* Enabled the option of turning off system log logging\
+* Merged the start/stop buttons\
+* Added the option of automatically starting the Authoxy daemon at System startup\
+* Added the option to change the local port the Authoxy daemon listens for connections on\
+* Fixed a memory usage bug when decoding the authentication string\
+\
+30-Sept-02, V1.0.0b\
+* First release beta software. Works on my computer.}

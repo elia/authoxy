@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45AA70CF05A042B000774A9C /* AuthoxyDaemon.c in Sources */ = {isa = PBXBuildFile; fileRef = 45AA70C305A042AF00774A9C /* AuthoxyDaemon.c */; };
+		45AA70D005A042B000774A9C /* AuthoxyDaemon.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AA70C405A042AF00774A9C /* AuthoxyDaemon.h */; };
+		45AA70D105A042B000774A9C /* connections.c in Sources */ = {isa = PBXBuildFile; fileRef = 45AA70C505A042AF00774A9C /* connections.c */; };
+		45AA70D505A042B000774A9C /* jsInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 45AA70C905A042AF00774A9C /* jsInterface.c */; };
+		45AA70E205A0443300774A9C /* defaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AA70E105A0443300774A9C /* defaults.h */; };
+		45AA70EE05A044D000774A9C /* Authoxy_PantherPref.icns in Resources */ = {isa = PBXBuildFile; fileRef = 45AA70ED05A044D000774A9C /* Authoxy_PantherPref.icns */; };
+		45AA70F305A0455300774A9C /* Authoxy_PantherPref.nib in Resources */ = {isa = PBXBuildFile; fileRef = 45AA70F105A0455300774A9C /* Authoxy_PantherPref.nib */; };
+		45AA711405A0483800774A9C /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 45AA70E505A0444A00774A9C /* base64.c */; };
+		45AA711505A0483A00774A9C /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AA70E605A0444A00774A9C /* base64.h */; };
+		45D81DE805AAC1EE002570D8 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 45AA70E505A0444A00774A9C /* base64.c */; };
+		45D81DE905AAC1F1002570D8 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AA70E605A0444A00774A9C /* base64.h */; };
+		45FE231605A556E30006B484 /* NTLM.c in Sources */ = {isa = PBXBuildFile; fileRef = 45FE231505A556E30006B484 /* NTLM.c */; };
+		45FE7B2A0B40BEB8005FBB61 /* authoxyd in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45AE0E0C059EF66E004686DA /* authoxyd */; };
+		8D202CEA0486D31800D8A456 /* Authoxy-Panther_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* Authoxy-Panther_Prefix.pch */; };
+		8D202CEB0486D31800D8A456 /* Authoxy_PantherPref.h in Headers */ = {isa = PBXBuildFile; fileRef = F506C03C013D9D7901CA16C8 /* Authoxy_PantherPref.h */; };
+		8D202CED0486D31800D8A456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D202CF10486D31800D8A456 /* Authoxy_PantherPref.m in Sources */ = {isa = PBXBuildFile; fileRef = F506C03D013D9D7901CA16C8 /* Authoxy_PantherPref.m */; };
+		8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F506C035013D953901CA16C8 /* PreferencePanes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45FE7B280B40BE9A005FBB61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45AE0E0B059EF66E004686DA;
+			remoteInfo = authoxyd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45FE7B240B40BE48005FBB61 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				45FE7B2A0B40BEB8005FBB61 /* authoxyd in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCFA20370C41700C91783 /* Authoxy-Panther_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Authoxy-Panther_Prefix.pch"; sourceTree = "<group>"; };
+		45AA70C305A042AF00774A9C /* AuthoxyDaemon.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = AuthoxyDaemon.c; sourceTree = "<group>"; };
+		45AA70C405A042AF00774A9C /* AuthoxyDaemon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AuthoxyDaemon.h; sourceTree = "<group>"; };
+		45AA70C505A042AF00774A9C /* connections.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = connections.c; sourceTree = "<group>"; };
+		45AA70C905A042AF00774A9C /* jsInterface.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = jsInterface.c; sourceTree = "<group>"; };
+		45AA70E105A0443300774A9C /* defaults.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = defaults.h; sourceTree = "<group>"; };
+		45AA70E505A0444A00774A9C /* base64.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		45AA70E605A0444A00774A9C /* base64.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		45AA70ED05A044D000774A9C /* Authoxy_PantherPref.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Authoxy_PantherPref.icns; sourceTree = "<group>"; };
+		45AA70F205A0455300774A9C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Authoxy_PantherPref.nib; sourceTree = "<group>"; };
+		45AA719005A04E9F00774A9C /* authoxyd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = authoxyd; path = build/authoxyd; sourceTree = "<group>"; };
+		45AE0E0C059EF66E004686DA /* authoxyd */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = authoxyd; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B0E5DD05B2A35F009E8881 /* global.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		45B5256E062E72FE00BF205D /* COPYING */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		45B52592062F60A200BF205D /* Authoxy ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "Authoxy ReadMe.rtf"; path = "Docs/Authoxy ReadMe.rtf"; sourceTree = "<group>"; };
+		45CD56150D2E680400F3918B /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = /usr/local/lib/libcurl.a; sourceTree = "<absolute>"; };
+		45FE231505A556E30006B484 /* NTLM.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = NTLM.c; sourceTree = "<group>"; };
+		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D202CF80486D31800D8A456 /* Authoxy.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Authoxy.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		F506C035013D953901CA16C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+		F506C03C013D9D7901CA16C8 /* Authoxy_PantherPref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Authoxy_PantherPref.h; sourceTree = "<group>"; };
+		F506C03D013D9D7901CA16C8 /* Authoxy_PantherPref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Authoxy_PantherPref.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D202CF20486D31800D8A456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */,
+				8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Authoxy-Panther */ = {
+			isa = PBXGroup;
+			children = (
+				45AA70C005A0427E00774A9C /* Daemon */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32DBCFA10370C40200C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = "Authoxy-Panther";
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+				45CD56150D2E680400F3918B /* libcurl.a */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45AA70F105A0455300774A9C /* Authoxy_PantherPref.nib */,
+				45AA70ED05A044D000774A9C /* Authoxy_PantherPref.icns */,
+				45B5256E062E72FE00BF205D /* COPYING */,
+				45B52592062F60A200BF205D /* Authoxy ReadMe.rtf */,
+				8D202CF70486D31800D8A456 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F506C03C013D9D7901CA16C8 /* Authoxy_PantherPref.h */,
+				F506C03D013D9D7901CA16C8 /* Authoxy_PantherPref.m */,
+				45AA70E105A0443300774A9C /* defaults.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				F506C035013D953901CA16C8 /* PreferencePanes.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D202CF80486D31800D8A456 /* Authoxy.prefPane */,
+				45AE0E0C059EF66E004686DA /* authoxyd */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32DBCFA10370C40200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				45AA70E605A0444A00774A9C /* base64.h */,
+				45AA70E505A0444A00774A9C /* base64.c */,
+				45B0E5DD05B2A35F009E8881 /* global.h */,
+				32DBCFA20370C41700C91783 /* Authoxy-Panther_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		45AA70C005A0427E00774A9C /* Daemon */ = {
+			isa = PBXGroup;
+			children = (
+				45AA719005A04E9F00774A9C /* authoxyd */,
+				45AA70C305A042AF00774A9C /* AuthoxyDaemon.c */,
+				45AA70C405A042AF00774A9C /* AuthoxyDaemon.h */,
+				45AA70C505A042AF00774A9C /* connections.c */,
+				45FE231505A556E30006B484 /* NTLM.c */,
+				45AA70C905A042AF00774A9C /* jsInterface.c */,
+			);
+			name = Daemon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		45AE0E09059EF66E004686DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D81DE905AAC1F1002570D8 /* base64.h in Headers */,
+				45AA70D005A042B000774A9C /* AuthoxyDaemon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D202CE90486D31800D8A456 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CEA0486D31800D8A456 /* Authoxy-Panther_Prefix.pch in Headers */,
+				8D202CEB0486D31800D8A456 /* Authoxy_PantherPref.h in Headers */,
+				45AA70E205A0443300774A9C /* defaults.h in Headers */,
+				45AA711505A0483A00774A9C /* base64.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		45AE0E0B059EF66E004686DA /* authoxyd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 458B280C0B3DF2720040372F /* Build configuration list for PBXNativeTarget "authoxyd" */;
+			buildPhases = (
+				45AE0E09059EF66E004686DA /* Headers */,
+				45AE0E0A059EF66E004686DA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = authoxyd;
+			productName = authoxyd;
+			productReference = 45AE0E0C059EF66E004686DA /* authoxyd */;
+			productType = "com.apple.product-type.tool";
+		};
+		8D202CE80486D31800D8A456 /* Authoxy-Panther */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 458B28100B3DF2720040372F /* Build configuration list for PBXNativeTarget "Authoxy-Panther" */;
+			buildPhases = (
+				8D202CE90486D31800D8A456 /* Headers */,
+				8D202CEC0486D31800D8A456 /* Resources */,
+				8D202CF00486D31800D8A456 /* Sources */,
+				8D202CF20486D31800D8A456 /* Frameworks */,
+				8D202CF50486D31800D8A456 /* Rez */,
+				45FE7B240B40BE48005FBB61 /* CopyFiles */,
+				45AA71ED05A0535100774A9C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45FE7B290B40BE9A005FBB61 /* PBXTargetDependency */,
+			);
+			name = "Authoxy-Panther";
+			productInstallPath = "$(HOME)/Library/PreferencePanes";
+			productName = "Authoxy-Panther";
+			productReference = 8D202CF80486D31800D8A456 /* Authoxy.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 458B28140B3DF2720040372F /* Build configuration list for PBXProject "Authoxy-Panther" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* Authoxy-Panther */;
+			projectDirPath = "";
+			targets = (
+				8D202CE80486D31800D8A456 /* Authoxy-Panther */,
+				45AE0E0B059EF66E004686DA /* authoxyd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D202CEC0486D31800D8A456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CED0486D31800D8A456 /* InfoPlist.strings in Resources */,
+				45AA70EE05A044D000774A9C /* Authoxy_PantherPref.icns in Resources */,
+				45AA70F305A0455300774A9C /* Authoxy_PantherPref.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D202CF50486D31800D8A456 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45AA71ED05A0535100774A9C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "#rm -R \"$INSTALL_PATH/$FULL_PRODUCT_NAME\"\n#mv \"$INSTALL_DIR/$FULL_PRODUCT_NAME\" \"$INSTALL_PATH/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45AE0E0A059EF66E004686DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D81DE805AAC1EE002570D8 /* base64.c in Sources */,
+				45AA70CF05A042B000774A9C /* AuthoxyDaemon.c in Sources */,
+				45AA70D105A042B000774A9C /* connections.c in Sources */,
+				45AA70D505A042B000774A9C /* jsInterface.c in Sources */,
+				45FE231605A556E30006B484 /* NTLM.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D202CF00486D31800D8A456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CF10486D31800D8A456 /* Authoxy_PantherPref.m in Sources */,
+				45AA711405A0483800774A9C /* base64.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45FE7B290B40BE9A005FBB61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45AE0E0B059EF66E004686DA /* authoxyd */;
+			targetProxy = 45FE7B280B40BE9A005FBB61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		45AA70F105A0455300774A9C /* Authoxy_PantherPref.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45AA70F205A0455300774A9C /* English */,
+			);
+			name = Authoxy_PantherPref.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		458B280D0B3DF2720040372F /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes/Authoxy.prefPane/Contents/MacOS";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-lcurl",
+					"-lssl",
+					"-lcrypto",
+					"-ljs",
+					"-ldl",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = authoxyd;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		458B280E0B3DF2720040372F /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes/Authoxy.prefPane/Contents/MacOS";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					/usr/local/lib/libcurl.a,
+					"-lssl",
+					"-lz",
+					"-lcrypto",
+					"-ljs",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = authoxyd;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		458B280F0B3DF2720040372F /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes/Authoxy.prefPane/Contents/MacOS";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-lcurl",
+					"-lssl",
+					"-lcrypto",
+					"-ljs",
+					"-ldl",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = authoxyd;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+			};
+			name = Default;
+		};
+		458B28110B3DF2720040372F /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Authoxy-Panther_Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Users/liteyear/Library/PreferencePanes;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Authoxy;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		458B28120B3DF2720040372F /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Authoxy-Panther_Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Users/liteyear/Library/PreferencePanes;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Authoxy;
+				SECTORDER_FLAGS = "";
+				STRIP_INSTALLED_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		458B28130B3DF2720040372F /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Authoxy-Panther_Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Users/liteyear/Library/PreferencePanes;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Authoxy;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Default;
+		};
+		458B28150B3DF2720040372F /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		458B28160B3DF2720040372F /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		458B28170B3DF2720040372F /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		458B280C0B3DF2720040372F /* Build configuration list for PBXNativeTarget "authoxyd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458B280D0B3DF2720040372F /* Development */,
+				458B280E0B3DF2720040372F /* Deployment */,
+				458B280F0B3DF2720040372F /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		458B28100B3DF2720040372F /* Build configuration list for PBXNativeTarget "Authoxy-Panther" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458B28110B3DF2720040372F /* Development */,
+				458B28120B3DF2720040372F /* Deployment */,
+				458B28130B3DF2720040372F /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		458B28140B3DF2720040372F /* Build configuration list for PBXProject "Authoxy-Panther" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458B28150B3DF2720040372F /* Development */,
+				458B28160B3DF2720040372F /* Deployment */,
+				458B28170B3DF2720040372F /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

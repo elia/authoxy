@@ -1,0 +1,24 @@
+{
+    IBClasses = (
+        {
+            CLASS = Controller; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {status = NSTextField; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {panelButtons = id; }; 
+            CLASS = startAuthWin; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                credentialsPanel = NSPanel; 
+                fPassword = NSTextField; 
+                fUsername = NSTextField; 
+                status = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindow; 
+        }
+    ); 
+    IBVersion = 1; 
+}

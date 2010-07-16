@@ -1,0 +1,84 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {setAutoManualConfig = id; startStop = id; }; 
+            CLASS = AuthoxyPref; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bStartStop = NSButton; 
+                cLogging = NSButton; 
+                fAddress = NSTextField; 
+                fLocalPort = NSTextField; 
+                fPACAddress = NSTextField; 
+                fPassword = NSTextField; 
+                fRemotePort = NSTextField; 
+                fStatus = NSTextField; 
+                fUsername = NSTextField; 
+                mAutoManualConfig = NSMatrix; 
+                rAutoConfig = NSButtonCell; 
+                rNoAutoConfig = NSButtonCell; 
+                tMessages = NSTextView; 
+                tTabs = NSTabView; 
+            }; 
+            SUPERCLASS = NSPreferencePane; 
+        }, 
+        {
+            CLASS = AuthoxyView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {fController = "Authoxy_PantherPref"; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = AuthoxyWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {
+            ACTIONS = {
+                changeMade = id; 
+                setAutoManualConfig = id; 
+                setNTLMConfig = id; 
+                startStop = id; 
+                testConnection = id; 
+            }; 
+            CLASS = "Authoxy_PantherPref"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bStartStop = NSButton; 
+                bTestConnection = NSButton; 
+                cExternalConnections = NSButton; 
+                cLogging = NSButton; 
+                cNTLMEnabled = NSButton; 
+                cPromptForCredentials = NSButton; 
+                fAddress = NSTextField; 
+                fChanges = NSTextField; 
+                fLocalPort = NSTextField; 
+                fNTLMDomain = NSTextField; 
+                fNTLMHost = NSTextField; 
+                fPACAddress = NSTextField; 
+                fPassword = NSTextField; 
+                fRemotePort = NSTextField; 
+                fStatus = NSTextField; 
+                fUsername = NSTextField; 
+                mAutoManualConfig = NSMatrix; 
+                rAutoConfig = NSButtonCell; 
+                rNoAutoConfig = NSButtonCell; 
+                tMessages = NSTextView; 
+                tTabs = NSTabView; 
+            }; 
+            SUPERCLASS = NSPreferencePane; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {
+            CLASS = NSPreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_firstKeyView" = id; 
+                "_initialKeyView" = id; 
+                "_lastKeyView" = id; 
+                "_window" = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = SFAuthorization; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = SFAuthorizationView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}
